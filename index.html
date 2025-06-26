@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roofing Pro Manchester</title>
+
+  <!-- Font Awesome CDN for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="hero.css" />
+  <link rel="stylesheet" href="cara.css" />
+  <link rel="stylesheet" href="testi.css" />
+  <link rel="stylesheet" href="whyus.css" />
+    <link rel="stylesheet" href="findus.css" />
+  <link rel="stylesheet" href="footer.css" />
+
+  <!-- Your script (defer to wait for HTML) -->
+  <script src="script.js" defer></script>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <a href="tel:0161 388 5736" class="icon-button" aria-label="Call us">
+      <i class="fas fa-mobile-alt"></i>
+    </a>
+    <div class="social-icons">
+      <a href="https://www.google.com/maps/place/Roofing+Pro+Manchester+NW/" aria-label="Google Maps">
+        <i class="fas fa-star"></i>
+      </a>
+      <a href="https://www.tiktok.com/@roofingpromanchester" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="mailto:Contact@roofingpromanchester.co.uk" aria-label="Email us">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="logo">
+      <img src="assets/logo.png" alt="Roofing Pro Manchester Logo" />
+    </div>
+
+    <div class="settings-icon" id="settingsToggle" role="button" tabindex="0" aria-label="Open settings">
+      <i class="fas fa-cog"></i>
+    </div>
+  </header>
+
+  <!-- Slide-in Mobile Menu -->
+<nav class="slide-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Settings Panel -->
+  <div class="settings-panel" id="settingsPanel" aria-hidden="true">
+    <h2>Settings</h2>
+    <label><input type="checkbox" id="darkModeToggle" /> Dark Mode</label>
+    <label><input type="checkbox" id="notificationsToggle" /> Notifications</label>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" role="region" aria-label="Hero section">
+    <div class="hero-image-area" aria-hidden="true"></div>
+    <div class="hero-gradient-overlay" aria-hidden="true"></div>
+    <div class="hero-slope-red" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="text-content">
+        <p class="tagline">ROOFING PRO MANCHESTER</p>
+        <h1>
+          MANCHESTER’S <br />
+          TRUSTED ROOFING <br />
+          SPECIALISTS
+        </h1>
+        <p class="subtext">
+          Experts in Roof Repairs, Replacements, and Gutter Work across Manchester & Cheshire. Reliable. Professional. Affordable.
+        </p>
+        <a href="tel:0161 388 5736" class="call-button" aria-label="Call us on 0161 388 5736">CALL US ON: 0161 388 5736</a>
+      </div>
+
+<div id="quote" class="quote-form">
+  <h3>GET A FREE QUOTE</h3>
+  <form action="https://formspree.io/f/mgvkjrgw" method="POST">
+    <input type="text" name="first-name" placeholder="First Name" required />
+    <input type="text" name="last-name" placeholder="Last Name" required />
+    <input type="tel" name="phone" placeholder="Mobile Number" required pattern="[0-9]{10,15}" />
+    <input type="text" name="address" placeholder="Your Address" required />
+    <textarea name="description" placeholder="Describe Your Project" required></textarea>
+    <button type="submit">SUBMIT</button>
+  </form>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Logos Carousel Section -->
+  <section class="trust-section" aria-label="Trusted by logos">
+    <div class="trust-heading">
+      <h2>Pick a Business Built on Trust</h2>
+      <p>Certified. Vetted. Trusted by customers across Manchester and Cheshire.</p>
+    </div>
+    <div class="logo-scroller" aria-hidden="true">
+      <div class="logo-track">
+        <img src="assets/icons/cg.png" alt="City & Guilds" />
+        <img src="assets/icons/cat.png" alt="Checkatrade" />
+        <img src="assets/icons/tp.png" alt="Trustpilot" />
+        <img src="assets/icons/tm.png" alt="Trustmark" />
+        <!-- Duplicate logos for seamless loop -->
+        <img src="assets/icons/cg.png" alt="City & Guilds" />
+        <img src="assets/icons/cat.png" alt="Checkatrade" />
+        <img src="assets/icons/tp.png" alt="Trustpilot" />
+        <img src="assets/icons/tm.png" alt="Trustmark" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+<section id="testimonials" class="testimonial-section" aria-label="Customer testimonials">
+  <div class="testimonial-background" aria-hidden="true"></div>
+  <div class="testimonial-container" id="testimonial-slider">
+    <!-- Testimonials injected by script.js -->
+  </div>
+</section>
+
+
+  <!-- Why Us Section -->
+<section class="why-us-section">
+  <div class="why-us-background"></div>
+  <h2 class="why-us-title">Why Choose Us</h2>
+  <div class="why-us-cards">
+    <div class="why-card">
+      <i class="fas fa-shield-alt icon"></i>
+      <h3>All Work Guaranteed</h3>
+      <p>We stand behind every project with a guarantee, ensuring lasting quality and your complete satisfaction.</p>
+    </div>
+    <div class="why-card">
+      <i class="fas fa-certificate icon"></i>
+      <h3>Fully Licensed & Insured</h3>
+      <p>Our team is fully licensed and insured, giving you peace of mind with every job we take on.</p>
+    </div>
+    <div class="why-card">
+      <i class="fas fa-tags icon"></i>
+      <h3>Competitive Prices</h3>
+      <p>We deliver high-quality work at prices that suit your budget — no compromises, just results.</p>
+    </div>
+    <div class="why-card">
+      <i class="fas fa-broom icon"></i>
+      <h3>Clean & Tidy</h3>
+      <p>We leave your space spotless. Our team works cleanly, respectfully, and professionally.</p>
+    </div>
+    <div class="why-card">
+      <i class="fas fa-map-marker-alt icon"></i>
+      <h3>Manchester & Cheshire</h3>
+      <p>We proudly serve Greater Manchester and Cheshire with fast, reliable roofing services.</p>
+    </div>
+  </div>
+</section>
+
+  <! -- map section -->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Us On The Map</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- FIND US ON THE MAP SECTION -->
+  <section class="map-section">
+    <div class="map-container">
+      <h2 class="section-header">Find Us On The Map</h2>
+      <div class="map-glass-box">
+        <div class="map-embed">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23723.149402679343!2d-2.2708918!3d53.4839599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1a6e889b8ff%3A0xd1dfb03b749cc355!2sManchester!5e0!3m2!1sen!2suk!4v1683476172170!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <a href="index.html" class="map-cta">Get a Free Quote Today</a>
+    </div>
+  </section>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo-area">
+        <img src="assets/logo.png" alt="Roofing Pro Manchester Logo">
+        <hr class="footer-line">
+        <p class="footer-description">
+          Roofing Pro Manchester is your trusted local roofing expert, covering all aspects from roof repairs to full installations across Manchester and Cheshire.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+<ul>
+  <li><a href="services.html">Our Services</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="index.html#testimonials">Testimonials</a></li>
+  <li><a href="index.html#quote">Get a Quote</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-credit">
+        Designed by <a href="https://darayandco.com" target="_blank">Daray&Co</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
+<div id="promo-popup" class="promo-popup" aria-hidden="true">
+  <div class="popup-overlay"></div>
+  <div class="popup-content">
+    <button class="popup-close" aria-label="Close popup">&times;</button>
+    <h2>Get 10% Off This Summer</h2>
+    <p>Book any roofing project this month and receive <strong>10% off</strong> Offer ends soon.</p>
+    <a href="contact.html#quote" class="popup-btn">Claim Your Offer</a>
+  </div>
+</div>
+
+<style>.promo-popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+  font-family: 'Inter', sans-serif;
+}
+
+.promo-popup.active {
+  display: flex;
+}
+
+.popup-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('assets/flat-roofing.jpg') center/cover no-repeat;
+  filter: brightness(0.5);
+  z-index: -2;
+}
+
+.popup-content {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(16px);
+  color: #fff;
+  padding: 28px 24px;
+  border-radius: 16px;
+  max-width: 340px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 0.5s ease;
+  position: relative;
+}
+
+.popup-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.popup-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.popup-btn {
+  background: #e30613;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.popup-btn:hover {
+  background: #b50510;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 400px) {
+  .popup-content h2 {
+    font-size: 18px;
+  }
+
+  .popup-content p {
+    font-size: 14px;
+  }
+}
+</style>

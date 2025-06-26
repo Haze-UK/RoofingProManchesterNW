@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | Roofing Pro Manchester</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="findus.css" />
+  <link rel="stylesheet" href="footer.css" />
+   <script src="script.js" defer></script>
+  <style>
+
+    @media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: #000;
+    }
+
+    .services-section {
+      background: linear-gradient(to bottom right, #000, #8e0000);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .services-section h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .services-section p.subtitle {
+      color: #d9d9d9;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .service-card .content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #e6e6e6;
+      line-height: 1.6;
+    }
+
+    .service-card .btn {
+      margin-top: 20px;
+      background: #b30000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      animation: shake 3s infinite;
+    }
+
+    .service-card .btn:hover {
+      background: #d00000;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-3px); }
+      40%, 80% { transform: translateX(3px); }
+    }
+
+    @media (max-width: 600px) {
+      .services-section h1 {
+        font-size: 2rem;
+      }
+
+      .service-card img {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <a href="tel:0161 388 5736" class="icon-button" aria-label="Call us">
+      <i class="fas fa-mobile-alt"></i>
+    </a>
+    <div class="social-icons">
+      <a href="https://www.google.com/maps/place/Roofing+Pro+Manchester+NW/" aria-label="Google Maps">
+        <i class="fas fa-star"></i>
+      </a>
+      <a href="https://www.tiktok.com/@roofingpromanchester" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="mailto:Contact@roofingpromanchester.co.uk" aria-label="Email us">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Roofing Pro Manchester Logo" />
+    </div>
+    <div class="settings-icon" id="settingsToggle" role="button" tabindex="0" aria-label="Open settings">
+      <i class="fas fa-cog"></i>
+    </div>
+  </header>
+
+  <!-- Slide-in Mobile Menu -->
+ <nav class="slide-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Settings Panel -->
+  <div class="settings-panel" id="settingsPanel" aria-hidden="true">
+    <h2>Settings</h2>
+    <label><input type="checkbox" id="darkModeToggle" /> Dark Mode</label>
+    <label><input type="checkbox" id="notificationsToggle" /> Notifications</label>
+  </div>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h1>OUR SERVICES</h1>
+    <p class="subtitle">MANCHESTER'S TRUSTED ROOFING COMPANY</p>
+    <div class="services-grid">
+<div class="services-grid">
+  <div class="service-card">
+    <img src="assets/new-roof.png" alt="New Roof">
+    <div class="content">
+      <h3>New Roofs</h3>
+      <p>High-quality new roof installations using premium materials for long-lasting protection.</p>
+      <a href="contact.html" class="btn">Enquire Now</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="assets/roof-repair.png" alt="Roof Repairs">
+    <div class="content">
+      <h3>Roof Repairs</h3>
+      <p>Expert repairs for all roof types. We fix leaks, tiles, and structural damage with precision.</p>
+      <a href="contact.html" class="btn">Enquire Now</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="assets/flat-roofing.png" alt="Flat Roofing">
+    <div class="content">
+      <h3>Flat Roofing</h3>
+      <p>Specialist flat roofing systems for both domestic and commercial properties in Manchester.</p>
+      <a href="contact.html" class="btn">Enquire Now</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="assets/fascia.png" alt="Fascia & Soffit">
+    <div class="content">
+      <h3>Fascia & Soffit</h3>
+      <p>Enhance your roofline with durable and stylish fascia and soffit solutions built to last.</p>
+      <a href="contact.html" class="btn">Enquire Now</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="assets/chimney.png" alt="Chimney Repairs & Builds">
+    <div class="content">
+      <h3>Chimney Repairs & Builds</h3>
+      <p>Full chimney services including rebuilds, repointing, and maintenance for safe venting.</p>
+      <a href="contact.html" class="btn">Enquire Now</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="assets/guttering.png" alt="Guttering">
+    <div class="content">
+      <h3>Guttering</h3>
+      <p>Gutter installations, repairs, and cleaning to protect your home from water damage.</p>
+      <a href="contact.html" class="btn">Enquire Now</a>
+    </div>
+  </div>
+
+<div class="service-card">
+  <img src="assets/drone-survey.png" alt="Roof Drone Survey">
+  <div class="content">
+    <h3>Roof Drone Survey</h3>
+    <p>Discover our Roof Drone Survey Service, providing safe, efficient, and detailed roof assessments. High-resolution imagery ensures accurate inspections, saving time and costs while helping plan maintenance or support insurance claims.</p>
+    <a href="contact.html" class="btn">Enquire Now</a>
+  </div>
+</div>
+
+<div class="service-card">
+  <img src="assets/roof-cleaning.png" alt="Roof Cleaning">
+  <div class="content">
+    <h3>Roof Cleaning</h3>
+    <p>Roof cleaning is essential to maintain your roof’s longevity. We use safe, effective techniques to remove moss, debris, and stains, preserving both aesthetics and functionality.</p>
+    <a href="contact.html" class="btn">Enquire Now</a>
+  </div>
+</div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="map-container">
+      <h2 class="section-header">Find Us On The Map</h2>
+      <div class="map-glass-box">
+        <div class="map-embed">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23723.149402679343!2d-2.2708918!3d53.4839599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1a6e889b8ff%3A0xd1dfb03b749cc355!2sManchester!5e0!3m2!1sen!2suk!4v1683476172170!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <a href="#quote" class="map-cta">Get a Free Quote Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo-area">
+          <img src="assets/logo.png" alt="Roofing Pro Manchester Logo">
+          <hr class="footer-line">
+          <p class="footer-description">
+            Roofing Pro Manchester is your trusted local roofing expert, covering all aspects from roof repairs to full installations across Manchester and Cheshire.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+<ul>
+  <li><a href="services.html">Our Services</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="index.html#testimonials">Testimonials</a></li>
+  <li><a href="index.html#quote">Get a Quote</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-credit">
+          Designed by <a href="https://darayandco.com" target="_blank">Daray&Co</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

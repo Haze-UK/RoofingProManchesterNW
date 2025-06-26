@@ -1,0 +1,161 @@
+/* Base body styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* Contact section with smooth black-to-red gradient */
+.contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #000, #7a0000);
+  text-align: center;
+}
+
+/* Container heading */
+.contact-container h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Container paragraph */
+.contact-container p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Glassmorphism style box */
+.glass-contact-box {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+/* Form layout */
+.glass-contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs and textarea */
+.glass-contact-box input,
+.glass-contact-box textarea {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  resize: vertical;
+  transition: background 0.3s ease;
+}
+
+.glass-contact-box input::placeholder,
+.glass-contact-box textarea::placeholder {
+  color: #ddd;
+}
+
+/* Input focus effect */
+.glass-contact-box input:focus,
+.glass-contact-box textarea:focus {
+  outline: 2px solid #e50914;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Submit button */
+.glass-contact-box button {
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.6);
+}
+
+.glass-contact-box button:hover,
+.glass-contact-box button:focus {
+  background: #c10710;
+  box-shadow: 0 6px 18px rgba(193, 7, 16, 0.8);
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #25d366;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-btn i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.whatsapp-btn:hover,
+.whatsapp-btn:focus {
+  background: #1eb94b;
+  box-shadow: 0 6px 18px rgba(30, 185, 75, 0.8);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 32px;
+  }
+
+  .glass-contact-box {
+    padding: 25px 20px;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+/* Entry animation */
+body.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Exit animation */
+body.page-exit {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}

@@ -27,14 +27,15 @@
   justify-content: space-between;
   align-items: center;
   background: #000;
-  padding: 20px;
+  height: 100px; /* Fixed height */
+  padding: 0 20px;
   position: relative;
   z-index: 1000;
 }
 
 .logo img {
-  height: 50px;
-  max-width: 100%;
+  max-height: 80px; /* Bigger logo but still fits in header */
+  object-fit: contain;
 }
 
 /* Hamburger Icon */
@@ -76,6 +77,7 @@
   z-index: 1001;
 }
 
+/* Slide Menu */
 .slide-menu {
   position: fixed;
   top: 0;
@@ -85,11 +87,10 @@
   background: rgba(0, 0, 0, 0.96);
   backdrop-filter: blur(12px);
   color: #fff;
-  padding: 140px 24px 24px; /* ⬅️ Increased top padding from 80px to 140px */
+  padding: 140px 24px 24px;
   transition: left 0.3s ease;
   z-index: 999;
 }
-
 
 .slide-menu.active {
   left: 0;
@@ -146,8 +147,13 @@
 
 /* Mobile Optimisation */
 @media (max-width: 768px) {
+  .main-header {
+    height: 80px;
+    padding: 0 16px;
+  }
+
   .logo img {
-    height: 75px;
+    max-height: 60px;
   }
 
   .menu-icon {

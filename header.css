@@ -33,7 +33,7 @@
 }
 
 .logo img {
-  height: 90px; /* ✅ Bigger logo */
+  height: 80px; /* Increased for client request */
   max-width: 100%;
 }
 
@@ -86,9 +86,9 @@
   background: rgba(0, 0, 0, 0.96);
   backdrop-filter: blur(12px);
   color: #fff;
-  padding: 130px 24px 24px; /* ✅ Moved links lower */
+  padding: 140px 24px 24px; /* Added space at the top to prevent header overlap */
   transition: left 0.3s ease;
-  z-index: 1100;
+  z-index: 9999; /* Ensure it appears above everything */
 }
 
 .slide-menu.active {

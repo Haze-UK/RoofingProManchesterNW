@@ -27,21 +27,21 @@
   justify-content: space-between;
   align-items: center;
   background: #000;
-  height: 100px; /* Fixed height */
+  height: 120px; /* ⬅️ taller fixed height */
   padding: 0 20px;
   position: relative;
   z-index: 1000;
 }
 
 .logo img {
-  max-height: 80px; /* Bigger logo but still fits in header */
+  max-height: 100px; /* ⬅️ logo enlarged */
   object-fit: contain;
 }
 
 /* Hamburger Icon */
 .menu-icon {
-  width: 28px;
-  height: 20px;
+  width: 30px;
+  height: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,9 +87,9 @@
   background: rgba(0, 0, 0, 0.96);
   backdrop-filter: blur(12px);
   color: #fff;
-  padding: 140px 24px 24px;
+  padding: 160px 24px 24px; /* ⬅️ moved menu content down */
   transition: left 0.3s ease;
-  z-index: 999;
+  z-index: 1100;
 }
 
 .slide-menu.active {
@@ -101,7 +101,7 @@
 }
 
 .slide-menu ul li {
-  margin: 18px 0;
+  margin: 20px 0;
 }
 
 .slide-menu ul li a {
@@ -125,9 +125,9 @@
   background: rgba(20, 20, 20, 0.95);
   backdrop-filter: blur(12px);
   color: #fff;
-  padding: 80px 24px;
+  padding: 100px 24px;
   transition: right 0.3s ease;
-  z-index: 999;
+  z-index: 1100;
 }
 
 .settings-panel.active {
@@ -148,12 +148,12 @@
 /* Mobile Optimisation */
 @media (max-width: 768px) {
   .main-header {
-    height: 80px;
+    height: 100px;
     padding: 0 16px;
   }
 
   .logo img {
-    max-height: 60px;
+    max-height: 80px;
   }
 
   .menu-icon {
@@ -164,5 +164,9 @@
   .slide-menu,
   .settings-panel {
     width: 100%;
+  }
+
+  .slide-menu {
+    padding-top: 140px; /* Adjust for mobile too */
   }
 }

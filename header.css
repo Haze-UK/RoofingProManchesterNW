@@ -33,7 +33,7 @@
 }
 
 .logo img {
-  height: 80px; /* Increased for client request */
+  height: 80px; /* Bigger logo */
   max-width: 100%;
 }
 
@@ -86,9 +86,9 @@
   background: rgba(0, 0, 0, 0.96);
   backdrop-filter: blur(12px);
   color: #fff;
-  padding: 140px 24px 24px; /* Added space at the top to prevent header overlap */
+  padding: 100px 24px 24px; /* 🔼 This is the fix — added top padding */
   transition: left 0.3s ease;
-  z-index: 9999; /* Ensure it appears above everything */
+  z-index: 999;
 }
 
 .slide-menu.active {

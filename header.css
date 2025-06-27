@@ -33,7 +33,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 70px;
   max-width: 100%;
 }
 
@@ -147,7 +147,7 @@
 /* Mobile Optimisation */
 @media (max-width: 768px) {
   .logo img {
-    height: 75px;
+    height: 55px;
   }
 
   .menu-icon {

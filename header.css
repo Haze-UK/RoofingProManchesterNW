@@ -147,7 +147,7 @@
 /* Mobile Optimisation */
 @media (max-width: 768px) {
   .logo img {
-    height: 55px;
+    height: 75px;
   }
 
   .menu-icon {

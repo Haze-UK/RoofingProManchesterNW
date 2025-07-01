@@ -76,6 +76,7 @@
   z-index: 1001;
 }
 
+/* Slide Menu */
 .slide-menu {
   position: fixed;
   top: 0;
@@ -85,11 +86,10 @@
   background: rgba(0, 0, 0, 0.96);
   backdrop-filter: blur(12px);
   color: #fff;
-  padding: 140px 24px 24px; /* ⬅️ Increased top padding from 80px to 140px */
+  padding: 140px 24px 24px;
   transition: left 0.3s ease;
   z-index: 999;
 }
-
 
 .slide-menu.active {
   left: 0;
@@ -147,7 +147,7 @@
 /* Mobile Optimisation */
 @media (max-width: 768px) {
   .logo img {
-    height: 55px;
+    height: 75px; /* ⬅️ Increased logo size on mobile */
   }
 
   .menu-icon {
@@ -158,5 +158,9 @@
   .slide-menu,
   .settings-panel {
     width: 100%;
+  }
+
+  .slide-menu {
+    padding-top: 180px; /* ⬅️ Increased top padding to avoid overlap */
   }
 }

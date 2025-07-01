@@ -163,7 +163,7 @@
 
   .logo {
     position: absolute;
-    top: -50px; /* Raise logo out of header */
+    top: -10px; /* Slightly pulled down into black header */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1002;

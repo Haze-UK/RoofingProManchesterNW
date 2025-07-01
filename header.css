@@ -31,7 +31,7 @@
   position: relative;
   z-index: 1000;
   overflow: visible;
-  height: 100px; /* Prevent header height from growing */
+  height: 100px; /* Fixed height so header doesn't stretch */
 }
 
 .logo {
@@ -155,18 +155,24 @@
 /* Mobile Optimisation */
 @media (max-width: 768px) {
   .main-header {
-    height: 100px; /* Fixed height */
+    padding: 20px;
+    height: 100px;
+    position: relative;
+    overflow: visible;
   }
 
   .logo {
     position: absolute;
-    top: -35px; /* Raise it above the black bar */
-    left: 16px;
+    top: -50px; /* Raise logo out of header */
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1002;
   }
 
   .logo img {
-    height: 120px; /* BIG logo */
+    height: 140px; /* Very big logo on mobile */
+    max-width: none;
+    width: auto;
   }
 
   .menu-icon {
@@ -180,6 +186,6 @@
   }
 
   .slide-menu {
-    padding-top: 220px; /* Make room for logo */
+    padding-top: 230px; /* Prevent overlap with large logo */
   }
 }

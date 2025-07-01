@@ -30,11 +30,18 @@
   padding: 20px;
   position: relative;
   z-index: 1000;
+  overflow: visible; /* Allow oversized logo to overflow */
+}
+
+.logo {
+  position: relative;
+  z-index: 1002;
 }
 
 .logo img {
   height: 70px;
   max-width: 100%;
+  transition: all 0.3s ease;
 }
 
 /* Hamburger Icon */
@@ -146,8 +153,14 @@
 
 /* Mobile Optimisation */
 @media (max-width: 768px) {
+  .logo {
+    position: absolute;
+    top: -40px; /* Shift logo upward */
+    left: 12px;
+  }
+
   .logo img {
-    height: 75px; /* ⬅️ Increased logo size on mobile */
+    height: 110px; /* ⬅️ VERY BIG as requested */
   }
 
   .menu-icon {
@@ -161,6 +174,6 @@
   }
 
   .slide-menu {
-    padding-top: 180px; /* ⬅️ Increased top padding to avoid overlap */
+    padding-top: 200px; /* Ensure links don’t overlap with big logo */
   }
 }
